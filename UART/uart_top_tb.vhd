@@ -2,10 +2,10 @@ library ieee;
 use ieee.std_logic_1164.ALL;
 use ieee.numeric_std.ALL;
 
-entity uart_top_tb is
-end    uart_top_tb;
+entity UART_TOP_TB is
+end    UART_TOP_TB;
 
-architecture TB of uart_top_tb is
+architecture TB of UART_TOP_TB is
   signal  clock_in:           std_logic;
   signal  reset_in:           std_logic;
     -- Uart RX
@@ -14,13 +14,13 @@ architecture TB of uart_top_tb is
   signal uart_data_rx:       std_logic;
   signal data_p_out:        std_logic_vector(7 downto 0);
     -- Uart TX
-  signal uart_rate_tx_sel:   std_logic_vector(1 downto 0));
+  signal uart_rate_tx_sel:   std_logic_vector(1 downto 0);
   signal data_p_en_in:       std_logic;
   signal data_p_in:          std_logic_vector(7 downto 0);
   signal uart_data_tx:      std_logic;
   
 begin
-    uart_top_tb: entity work.uart_top 
+    uart_top: entity work.uart_top 
     port 
     map(
         

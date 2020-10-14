@@ -9,3 +9,4 @@ elaborate UART_TOP
 read_sdc ./constraints.sdc
 
 synthesize -to_generic -eff high
+synthesize -to_mapped -eff high
